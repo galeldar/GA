@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin:700);
+
+body {
+	background: black;
+  min-height: 100%;
+  padding:0;
+  margin:0;
+  text-align: center;
+  font-family: 'Ariel', sans-serif;
+
+}
+body, html {
+		cursor: cell;
+	* {
+			box-sizing: border-box;
+	}
+}
+
+*:focus {
+    outline: none;
+}
+
+canvas {
+  display: inline;
+}
+
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.intro {
+	position:absolute;
+  top: 15%;
+	right: 20%;
+	width: 60%;
+	text-align: justify;
+	color: white;
+  font-size: 3vw;
+	padding: 1.5%;
+	border: 5px solid blue;
+}
+
+.intro:hover {
+	border: 5px solid red;
+}
+
+.wrapper {
+   position:absolute;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+	 visibility: hidden;
+
+}
+
+
+.close{
+	position: absolute;
+  top: 25px;
+  right: 25px;
+	color: white;
+	font-size: 1.5vh;
+	font-size: 1.5vw;
+	border: 3px solid black;
+	padding: 3px 10px;
+}
+
+.mainClose{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+	color: white;
+	font-size: 1.5vh;
+	font-size: 1.5vw;
+	border: 3px solid black;
+	padding: 3px 10px;
+}
+
+.close:hover {
+  background: red;
+	color: black;
+}
+
+.mainClose:hover {
+  background: blue;
+}
+
+
+
+.inputScreen {
+  width: 75%;
+  height: 60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 7px solid white;
+  background-color: rgba(0, 0, 0, .7);
+  display: block;
+}
+
+
+
+.container {
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+#submit {
+  position: absolute;
+  top: 75%;
+  width: 6%;
+  height: 100%;
+  transform: translate(-75%, -75%);
+  border: 1px solid white;
+  box-shadow: 7px 5px white;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  margin-left: 7%;
+}
+
+#submit:hover{
+	background-color: red;
+}
+
+#submit:active{
+	background-color: blue;
+}
+
+
+
+#submit:active {
+  box-shadow: 4px 0px white;
+}
+
+input[type="text"] {
+  width: 30%;
+  border: 1px solid white;
+  padding: 10px 10px;
+  background-color: black;
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  box-shadow: 7px 5px white;
+  display: inline-block;
+}
